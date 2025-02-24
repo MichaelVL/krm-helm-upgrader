@@ -49,7 +49,7 @@ jobs:
     #     IMAGE=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')
     #     echo "image=$IMAGE@$DIGEST" >> $GITHUB_OUTPUT
 
-    - uses: sigstore/cosign-installer@dc72c7d5c4d10cd6bcb8cf6e3fd625a9e5e537da # tag=v3.7.0
+    - uses: sigstore/cosign-installer@d7d6bc7722e3daa8354c50bcb52f4837da5e9b6a # tag=v3.8.1
 
     - name: Sign container
       run: make manifest-list-sign
